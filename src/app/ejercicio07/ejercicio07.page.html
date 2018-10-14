@@ -9,12 +9,12 @@
 
 <ion-content padding>
   <ion-item>
-      <ion-label position="floating">Valor mínimo</ion-label>
-      <ion-input clearInput [(ngModel)]="pts" (keyup)="updatePts()></ion-input>
+      <ion-label>Pesetas</ion-label>
+      <ion-input clearInput [(ngModel)]="pts" (keyup)="updateEuros()"></ion-input>
     </ion-item>
   
     <ion-item>
-      <ion-label position="floating">Valor máximo</ion-label>
-      <ion-input clearInput [(ngModel)]="eur" (keyup)="updateEuros()></ion-input>
+      <ion-label>Euros</ion-label>
+      <ion-input clearInput [(ngModel)]="eur" (keyup)="updatePts()"></ion-input>
     </ion-item>
 </ion-content>

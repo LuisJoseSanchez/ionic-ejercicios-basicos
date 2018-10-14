@@ -19,7 +19,7 @@ export class Ejercicio07Page implements OnInit {
     this.pts = this.eur * 166.386;
   }
 
-  updateEur() {
+  updateEuros() {
     this.eur = this.pts / 166.386;
   }
 }
