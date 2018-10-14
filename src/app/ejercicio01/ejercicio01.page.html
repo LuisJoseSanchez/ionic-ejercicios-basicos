@@ -3,10 +3,23 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/home"></ion-back-button>
     </ion-buttons>
-    <ion-title>Ejercicio01</ion-title>
+    <ion-title>Ejercicio 1</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
 
+  <ion-button
+    (click)="showName()"
+    expand="full">
+    Muestra nombre
+  </ion-button>
+
+  <ion-button
+    (click)="cleanName()"
+    expand="full">
+    Limpia pantalla
+  </ion-button>
+
+  <h1 text-center>{{ name }}</h1>
 </ion-content>
