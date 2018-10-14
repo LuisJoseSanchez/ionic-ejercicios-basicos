@@ -1,9 +1,15 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Ejercicio04</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ejercicio 4</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-
+  <ion-item>
+      <ion-label position="floating">Título</ion-label>
+      <ion-input clearInput [(ngModel)]="todo.title"></ion-input>
+    </ion-item>
 </ion-content>

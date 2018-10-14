@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Ejercicio03Page implements OnInit {
 
+  n = 0;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  inc() {
+    this.n++;
+  }
+
+  dec() {
+    this.n--;
+  }
+
+  reset() {
+    this.n = 0;
+  }
 }
