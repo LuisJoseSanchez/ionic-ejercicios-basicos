@@ -1,9 +1,20 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Ejercicio07</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ejercicio 7</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-
+  <ion-item>
+      <ion-label position="floating">Valor mínimo</ion-label>
+      <ion-input clearInput [(ngModel)]="pts" (keyup)="updatePts()></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Valor máximo</ion-label>
+      <ion-input clearInput [(ngModel)]="eur" (keyup)="updateEuros()></ion-input>
+    </ion-item>
 </ion-content>

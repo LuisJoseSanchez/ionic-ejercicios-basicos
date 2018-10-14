@@ -8,26 +8,38 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-button
-    (click)="dec()"
-    size="large"
-    shape="round"
-    class="half">
-    -
-  </ion-button>
-  <ion-button
-    (click)="inc()"
-    size="large"
-    class="half">
-    +
-  </ion-button>
-  
+
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center size="3">
+        <ion-button
+          (click)="dec()"
+          size="large"
+          shape="round"
+          expand="full">
+          <ion-icon name="remove"></ion-icon>
+        </ion-button>
+      </ion-col>
+
+      <ion-col size="6"></ion-col>
+
+      <ion-col text-center size="3">
+        <ion-button
+          (click)="inc()"
+          size="large"
+          shape="round"
+          expand="full">
+          <ion-icon name="add"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
   <h1 text-center>{{ n }}</h1>
 
   <ion-button
     (click)="reset()"
     size="large"
-    shape="round"
     expand="full">
     Reset
   </ion-button>

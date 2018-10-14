@@ -1,9 +1,107 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Ejercicio06</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ejercicio 6</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
 
+  <ion-grid>
+    <ion-row>
+      <ion-col size="2">
+        <ion-icon
+          (click)="incPosition()"
+          *ngIf="position==1"
+          name="logo-octocat"
+          size="large">
+        </ion-icon>
+        <ion-icon
+          *ngIf="position==6"
+          name="logo-octocat"
+          size="large"
+          class="white">
+        </ion-icon>
+      </ion-col>
+      <ion-col size="2"></ion-col>
+      <ion-col size="2"></ion-col>
+      <ion-col size="2"></ion-col>
+      <ion-col size="2"></ion-col>
+      <ion-col size="2"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="2"></ion-col>
+      <ion-col size="2">
+        <ion-icon
+        (click)="incPosition()"
+        *ngIf="position==2"
+        name="logo-octocat"
+        size="large">
+        </ion-icon>
+      </ion-col>
+      <ion-col size="2"></ion-col>
+      <ion-col size="2"></ion-col>
+      <ion-col size="2"></ion-col>
+      <ion-col size="2"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="2"></ion-col>
+      <ion-col size="2"></ion-col>
+      <ion-col size="2">
+        <ion-icon
+        (click)="incPosition()"
+        *ngIf="position==3"
+        name="logo-octocat"
+        size="large">
+        </ion-icon>
+      </ion-col>
+      <ion-col size="2"></ion-col>
+      <ion-col size="2"></ion-col>
+      <ion-col size="2"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="2"></ion-col>
+      <ion-col size="2"></ion-col>
+      <ion-col size="2"></ion-col>
+      <ion-col size="2">
+        <ion-icon
+        (click)="incPosition()"
+        *ngIf="position==4"
+        name="logo-octocat"
+        size="large">
+        </ion-icon>
+      </ion-col>
+      <ion-col size="2"></ion-col>
+      <ion-col size="2"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="2"></ion-col>
+      <ion-col size="2"></ion-col>
+      <ion-col size="2"></ion-col>
+      <ion-col size="2"></ion-col>
+      <ion-col size="2">
+        <ion-icon
+        (click)="incPosition()"
+        *ngIf="position==5"
+        name="logo-octocat"
+        size="large">
+        </ion-icon>
+      </ion-col>
+      <ion-col size="2"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="2"></ion-col>
+      <ion-col size="2"></ion-col>
+      <ion-col size="2"></ion-col>
+      <ion-col size="2"></ion-col>
+      <ion-col size="2"></ion-col>
+      <ion-col size="2">
+        <ion-icon name="exit" size="large"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h2 text-center *ngIf="position==6">El pulpogato se ha marchado</h2>
 </ion-content>

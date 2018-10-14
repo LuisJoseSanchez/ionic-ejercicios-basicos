@@ -9,7 +9,16 @@
 
 <ion-content padding>
   <ion-item>
-      <ion-label position="floating">Título</ion-label>
-      <ion-input clearInput [(ngModel)]="todo.title"></ion-input>
-    </ion-item>
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input clearInput [(ngModel)]="name"></ion-input>
+  </ion-item>
+
+  <ion-button
+    (click)="sayHello()"
+    size="large"
+    expand="full">
+    Saluda
+  </ion-button>
+
+  <h1 text-center>{{ message }}</h1>
 </ion-content>

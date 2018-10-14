@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Ejercicio04Page implements OnInit {
 
+  name: string;
+  message: string;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  sayHello() {
+    this.message = '¡Hola ' + this.name + '!';
+  }
 }

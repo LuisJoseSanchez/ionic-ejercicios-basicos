@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Ejercicio06Page implements OnInit {
 
+  position = 1;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  incPosition() {
+    this.position++;
+  }
 }
