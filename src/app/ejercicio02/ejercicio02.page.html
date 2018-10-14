@@ -9,4 +9,12 @@
 
 <ion-content padding>
 
+    <ion-button
+      (click)="toggleName()"
+      expand="full">
+      {{ buttonMessage }}
+    </ion-button>
+  
+    <h1 text-center>{{ name }}</h1>
+
 </ion-content>

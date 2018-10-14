@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Ejercicio02Page implements OnInit {
 
+  name = '';
+  buttonMessage = 'Muestra nombre';
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  toggleName() {
+    if (this.name === '') {
+      this.name = 'Luis José Sánchez';
+      this.buttonMessage = 'Limpia pantalla';
+    } else {
+      this.name = '';
+      this.buttonMessage = 'Muestra nombre';
+    }
+  }
 }
