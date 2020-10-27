@@ -1,4 +1,4 @@
-# Ejercicios básicos de Ionic
+# Ejercicios básicos de Ionic (relación 2 de la asignatura)
 
 Para ejecutar el proyecto, hay que seguir los siguientes pasos:
 
