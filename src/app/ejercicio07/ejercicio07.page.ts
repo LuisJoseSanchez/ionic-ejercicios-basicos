@@ -16,10 +16,10 @@ export class Ejercicio07Page implements OnInit {
   }
 
   updatePts() {
-    this.pts = this.eur * 166.386;
+    this.pts = Math.round(this.eur * 166.386);
   }
 
   updateEuros() {
-    this.eur = this.pts / 166.386;
+    this.eur = +(this.pts / 166.386).toFixed(2);
   }
 }
